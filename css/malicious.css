@@ -1,0 +1,301 @@
+@charset "UTF-8";
+/* line 5, ../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 2, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* line 22, ../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 21, ../sass/_reset.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 31, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 37, ../sass/_reset.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 44, ../sass/_reset.scss */
+q, blockquote {
+  quotes: none;
+}
+
+/* line 103, ../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 48, ../sass/_reset.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 54, ../sass/_reset.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 59, ../sass/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 6, ../sass/malicious.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 9, ../sass/malicious.scss */
+body {
+  overflow: hidden;
+}
+@media all and (max-width: 375px) {
+  /* line 9, ../sass/malicious.scss */
+  body {
+    overflow-y: initial;
+  }
+}
+/* line 14, ../sass/malicious.scss */
+body::before {
+  content: '';
+  position: absolute;
+  top: -1%;
+  left: -1%;
+  right: -1%;
+  bottom: -1%;
+  background: url(../img/mbg_.jpg) center/cover;
+  -webkit-filter: blur(5px);
+  z-index: -1;
+}
+
+/* line 27, ../sass/malicious.scss */
+* {
+  font-family: 'Source Sans Pro', 'Roboto', Arial, '文泉驛正黑', 'WenQuanYi Zen Hei', '儷黑 Pro', 'LiHei Pro', '微軟正黑體', 'Microsoft JhengHei', '標楷體', 'DFKai-SB', 'sans-serif';
+}
+
+/* line 32, ../sass/malicious.scss */
+*,
+*::before,
+*::after {
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* line 41, ../sass/malicious.scss */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 46, ../sass/malicious.scss */
+.clearfix {
+  clear: both;
+}
+
+/* line 50, ../sass/malicious.scss */
+.hidden {
+  display: none;
+}
+
+/* line 54, ../sass/malicious.scss */
+.mgnbtm0 {
+  margin-bottom: 0;
+}
+
+/* line 58, ../sass/malicious.scss */
+.header {
+  position: fixed;
+  height: 60px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #1a1c1e;
+  z-index: 99;
+}
+/* line 67, ../sass/malicious.scss */
+.header .logo {
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 74, ../sass/malicious.scss */
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 900px;
+  padding: 0 50px 50px 50px;
+  text-align: center;
+  overflow: hidden;
+  border: 1px solid rgba(132, 132, 132, 0.53);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+@media all and (max-width: 768px) {
+  /* line 74, ../sass/malicious.scss */
+  .wrapper {
+    width: 95%;
+    padding: 5%;
+    margin: 0 auto;
+  }
+}
+@media all and (max-width: 420px) {
+  /* line 74, ../sass/malicious.scss */
+  .wrapper {
+    position: relative;
+    top: 80px;
+    left: 0;
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+@media all and (max-width: 375px) {
+  /* line 74, ../sass/malicious.scss */
+  .wrapper {
+    margin-bottom: 20px;
+  }
+}
+/* line 99, ../sass/malicious.scss */
+.wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: -1;
+}
+/* line 110, ../sass/malicious.scss */
+.wrapper .desc {
+  margin: 40px 0;
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  color: #a11f17;
+}
+@media all and (max-width: 768px) {
+  /* line 110, ../sass/malicious.scss */
+  .wrapper .desc {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+}
+@media all and (max-width: 600px) {
+  /* line 110, ../sass/malicious.scss */
+  .wrapper .desc {
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+}
+@media all and (max-width: 420px) {
+  /* line 110, ../sass/malicious.scss */
+  .wrapper .desc {
+    text-align: center;
+  }
+}
+/* line 135, ../sass/malicious.scss */
+.wrapper .url {
+  margin: 40px 0;
+  font-size: 44px;
+  text-align: center;
+}
+@media all and (max-width: 768px) {
+  /* line 135, ../sass/malicious.scss */
+  .wrapper .url {
+    font-size: 2rem;
+  }
+}
+@media all and (max-width: 600px) {
+  /* line 135, ../sass/malicious.scss */
+  .wrapper .url {
+    font-size: 1.5rem;
+  }
+}
+@media all and (max-width: 420px) {
+  /* line 135, ../sass/malicious.scss */
+  .wrapper .url {
+    font-size: 1.4rem;
+  }
+}
+/* line 158, ../sass/malicious.scss */
+.wrapper .content {
+  display: inline-block;
+  min-width: 450px;
+  max-width: 800px;
+  padding: 15px;
+  border: 1px solid black;
+  text-align: center;
+  overflow: hidden;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.07);
+}
+@media all and (max-width: 420px) {
+  /* line 158, ../sass/malicious.scss */
+  .wrapper .content {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+/* line 172, ../sass/malicious.scss */
+.wrapper .content::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #a11f17;
+  z-index: -1;
+}
+/* line 183, ../sass/malicious.scss */
+.wrapper .content .short_desc {
+  font-size: 1.4rem;
+  line-height: 2;
+  color: #fff;
+  text-align: left;
+  animation-delay: 0.3s;
+}

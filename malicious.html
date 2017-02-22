@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Block Page</title>
+    <link rel="stylesheet" href="css/font/css.css">
+    <link rel="stylesheet" href="css/malicious.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+    <div class="header">
+        <a href="http://www.lionic.com/">
+            <img src="img/logo_new2-60.png" alt="Lionic Corp" class="logo">
+        </a>
+    </div class="header">
+    <div class="wrapper">
+        <div class="desc">Warning: Visiting this site may harm your device!</div>
+        <div id="url" class="url animated shake">
+            www.cnn.com/
+        </div>
+        <div class="content animated fadeIn">
+            <div id="short_desc" class="short_desc animated fadeIn">
+                attackers might attempt to trick you into installing programs that harm you browsing experience (for example, by changing your homepage or showing extra ads on sites you visit).
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function get_params_by_Name(name, url) {
+            if (!url) {
+                url = window.location.href;
+            }
+            name = name.replace(/[\[\]]/g, "\\$&");
+
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+
+            if (!results) return null;
+            if (!results[2]) return '';
+
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+        var url = get_params_by_Name('url');
+
+        document.getElementById('url').innerText = url;
+    </script>
+</body>
+</html>

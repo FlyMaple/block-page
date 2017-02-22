@@ -1,0 +1,38 @@
+$pc-meida: 1920px;
+$pc-16-9-media: 1280px;
+$pc-4-3-media:1024px;
+$pad: 768px;
+$mini-pad: 600px;
+$iphone6plus: 420px;
+$iphone6: 375px;
+$iphone5: 320px;
+
+@mixin forPad () {
+    @media all and (max-width: $pad) {
+        @content;
+    }
+}
+
+@mixin forMiniPad () {
+    @media all and (max-width: $mini-pad) {
+        @content;
+    }
+}
+
+@mixin forip6plus () {
+    @media all and (max-width: $iphone6plus) {
+        @content;
+    }
+}
+
+@mixin forip6 () {
+    @media all and (max-width: $iphone6) {
+        @content;
+    }
+}
+
+@mixin forip5 () {
+    @media all and (max-width: $iphone5) {
+        @content;
+    }
+}

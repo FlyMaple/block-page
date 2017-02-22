@@ -1,0 +1,193 @@
+@import 'compass/css3';
+@import 'reset';
+
+@import 'rwd';
+
+html, body {
+    height: 100%;
+}
+body {
+    overflow: hidden;
+    @include forip6 {
+        overflow-y: initial;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: -1%;
+        left: -1%;
+        right: -1%;
+        bottom: -1%;
+        background: url(../img/mbg_.jpg) center / cover;
+        -webkit-filter: blur(5px);
+        z-index: -1;
+    }
+}
+
+* {
+    font-family: 'Source Sans Pro', 'Roboto', Arial, '文泉驛正黑', 'WenQuanYi Zen Hei', '儷黑 Pro', 'LiHei Pro', '微軟正黑體', 'Microsoft JhengHei', '標楷體', 'DFKai-SB', 'sans-serif';
+}
+
+
+*,
+*::before,
+*::after {
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.hidden {
+    display: none;
+}
+
+.mgnbtm0 {
+    margin-bottom: 0;
+}
+
+.header {
+    position: fixed;
+    height: 60px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #1a1c1e;
+    z-index: 99;
+
+    .logo {
+        width: auto;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 900px;
+    padding: 0 50px 50px 50px;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid rgba(132, 132, 132, 0.53);
+    @include transform(translate(-50%, -50%));
+    @include border-radius(10px);
+    @include forPad {
+        width: 95%;
+        padding: 5%;
+        margin: 0 auto;
+    }
+    @include forip6plus {
+        position: relative;
+        top: 80px;
+        left: 0;
+        @include transform(translate(0, 0));
+    }
+    @include forip6 {
+        margin-bottom: 20px;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.9);
+        z-index: -1;
+    }
+
+    .desc {
+        margin: 40px 0;
+        font: {
+            size: 36px;
+            weight: 600;
+        }
+        text-align: center;
+        color: rgb(161, 31, 23);
+        @include forPad {
+            margin: 0;
+            font: {
+                size: 1.8rem;
+            }
+        }
+        @include forMiniPad {
+            font: {
+                size: 1.4rem;
+            }
+            line-height: 1.5;
+        }
+        @include forip6plus {
+            text-align: center;
+        }
+    }
+
+    .url {
+        margin: 40px 0;
+        font: {
+            size: 44px;
+        }
+        text-align: center;
+        @include forPad {
+            font: {
+                size: 2rem;
+            }
+        }
+        @include forMiniPad {
+            font: {
+                size: 1.5rem;
+            }
+        }
+        @include forip6plus {
+            font: {
+                size: 1.4rem;
+            }
+        }
+    }
+
+    .content {
+        display: inline-block;
+        min-width: 450px;
+        max-width: 800px;
+        padding: 15px;
+        border: 1px solid rgb(0, 0, 0);
+        text-align: center;
+        overflow: hidden;
+        @include border-radius(4px);
+        @include box-shadow(0 0 20px 4px rgba(0, 0, 0, 0.07));
+        @include forip6plus {
+            min-width: 100%;
+            max-width: 100%;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgb(161, 31, 23);
+            z-index: -1;
+        }
+
+        .short_desc {
+            font: {
+                size: 1.4rem;
+            }
+            line-height: 2;
+            color: #fff;
+            text-align: left;
+            animation-delay: 0.3s;
+        }
+    }
+}
